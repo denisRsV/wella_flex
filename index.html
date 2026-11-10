@@ -34,7 +34,7 @@
      ССЫЛКА-SILK-FINISH-6         — Silk Finish & Hold, набор 6 шт.
      ССЫЛКА-SILK-FINISH-12        — Silk Finish & Hold, набор 12 шт.
      Совет: добавьте к ссылкам UTM-метки, например ?utm_source=direct&utm_medium=landing&utm_campaign=wellaflex
-  2. Фото: положите картинки в папку img/ и раскомментируйте <img> в каждой карточке (подсказка над карточкой).
+  2. Фото: загрузите в папку img/ файлы volume-2day.webp, shiny-hold.webp, sensitive.webp, fullness.webp, silk-finish.webp (формат 3:4)
   3. Рейтинг и число отзывов магазина на Маркете — ищите [РЕЙТИНГ] и [ОТЗЫВЫ].
   4. Яндекс Метрика: вставьте свой код счётчика перед </head> и замените 00000000 на номер счётчика
      в скрипте внизу страницы. Клик по любой кнопке «Купить на Маркете» отправит цель click_market.
@@ -81,7 +81,7 @@
   .tier--top .tier__label { color:var(--accent-soft); }
   .products { display:flex; flex-direction:column; gap:20px; }
   .product { border:1px solid var(--line); border-radius:20px; padding:22px; display:flex; flex-wrap:wrap; gap:26px; }
-  .product__img { flex:1 1 200px; max-width:260px; aspect-ratio:1/1; border-radius:14px; object-fit:contain; background:var(--soft); }
+  .product__img { flex:0 0 240px; width:240px; height:auto; aspect-ratio:3/4; align-self:flex-start; border-radius:14px; object-fit:cover; background:var(--soft); }
   .product__img--ph { display:flex; align-items:center; justify-content:center; text-align:center; padding:16px; color:#6B7080; font-size:14px; }
   .product__body { flex:999 1 420px; min-width:0; }
   .product__meta { display:flex; flex-wrap:wrap; gap:10px; align-items:center; font-size:13px; font-weight:600; color:var(--muted); }
@@ -115,7 +115,7 @@
     .nav a:not(.phone) { display:none; }
     .hero .wrap { padding-top:36px; padding-bottom:36px; gap:24px; }
     .product { padding:16px; gap:16px; }
-    .product__img { max-width:none; flex-basis:100%; aspect-ratio:16/10; }
+    .product__img { flex:0 0 auto; width:100%; max-width:260px; margin:0 auto; }
     .sets { grid-template-columns:1fr 1fr; }
     .sticky-cta { display:flex; position:fixed; left:12px; right:12px; bottom:12px; z-index:20; box-shadow:0 6px 24px rgba(0,0,0,.18); }
     body { padding-bottom:76px; }
@@ -174,8 +174,7 @@
       <p class="sub">Нажмите на набор — откроется его карточка на Яндекс Маркете, где можно оформить заказ.</p>
       <div class="products">
       <article class="product" id="volume-2day">
-        <!-- Фото: замените блок на <img class="product__img" src="img/volume-2day.jpg" alt="Лак Volume 2Day" width="260" height="260" loading="lazy"> -->
-        <div class="product__img product__img--ph">Фото: Volume 2Day</div>
+        <img class="product__img" src="img/volume-2day.webp" alt="Лак Volume 2Day" width="240" height="320" loading="lazy">
         <div class="product__body">
           <div class="product__meta"><span class="pill">Экстрасильная фиксация</span><span>250 мл</span></div>
           <h3>Wellaflex Volume 2Day — объём до 2 дней</h3>
@@ -209,8 +208,7 @@
         </div>
       </article>
       <article class="product" id="shiny-hold">
-        <!-- Фото: замените блок на <img class="product__img" src="img/shiny-hold.jpg" alt="Лак Shiny Hold" width="260" height="260" loading="lazy"> -->
-        <div class="product__img product__img--ph">Фото: Shiny Hold</div>
+        <img class="product__img" src="img/shiny-hold.webp" alt="Лак Shiny Hold" width="240" height="320" loading="lazy">
         <div class="product__body">
           <div class="product__meta"><span class="pill">Сильная фиксация + блеск</span><span>250 мл</span></div>
           <h3>Wellaflex Shiny Hold — блеск и фиксация</h3>
@@ -244,8 +242,7 @@
         </div>
       </article>
       <article class="product" id="sensitive">
-        <!-- Фото: замените блок на <img class="product__img" src="img/sensitive.jpg" alt="Лак Sensitive" width="260" height="260" loading="lazy"> -->
-        <div class="product__img product__img--ph">Фото: Sensitive</div>
+        <img class="product__img" src="img/sensitive.webp" alt="Лак Sensitive" width="240" height="320" loading="lazy">
         <div class="product__body">
           <div class="product__meta"><span class="pill">Для чувствительной кожи головы</span><span>250 мл</span></div>
           <h3>Wellaflex Sensitive — для чувствительной кожи</h3>
@@ -279,8 +276,7 @@
         </div>
       </article>
       <article class="product" id="fullness">
-        <!-- Фото: замените блок на <img class="product__img" src="img/fullness.jpg" alt="Лак Fullness For Thin Hair" width="260" height="260" loading="lazy"> -->
-        <div class="product__img product__img--ph">Фото: Fullness For Thin Hair</div>
+        <img class="product__img" src="img/fullness.webp" alt="Лак Fullness For Thin Hair" width="240" height="320" loading="lazy">
         <div class="product__body">
           <div class="product__meta"><span class="pill">Суперсильная фиксация</span><span>250 мл</span></div>
           <h3>Wellaflex Fullness — для тонких волос</h3>
@@ -314,8 +310,7 @@
         </div>
       </article>
       <article class="product" id="silk-finish">
-        <!-- Фото: замените блок на <img class="product__img" src="img/silk-finish.jpg" alt="Лак Silk Finish &amp; Hold" width="260" height="260" loading="lazy"> -->
-        <div class="product__img product__img--ph">Фото: Silk Finish &amp; Hold</div>
+        <img class="product__img" src="img/silk-finish.webp" alt="Лак Silk Finish &amp; Hold" width="240" height="320" loading="lazy">
         <div class="product__body">
           <div class="product__meta"><span class="pill">Суперсильная фиксация</span><span>250 мл</span></div>
           <h3>Wellaflex Silk Finish &amp; Hold</h3>
